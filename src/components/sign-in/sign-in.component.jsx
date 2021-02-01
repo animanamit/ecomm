@@ -12,7 +12,7 @@ const SignIn = () => {
 
   return (
     <div className="signin">
-      <h2>I already have an account</h2>
+      <h3>I already have an account</h3>
       <span>Sign in with email and password</span>
       <form onSubmit={handleSignInSubmit}>
         <input
