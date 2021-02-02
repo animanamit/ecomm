@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { signInWithGoogle } from "../../firebase/firebase.utils";
+
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,6 +35,8 @@ const SignIn = () => {
         <label>Password</label>
         <input type="submit" value="Submit" />
       </form>
+
+      <button onClick={signInWithGoogle}>Sign in with google</button>
     </div>
   );
 };
