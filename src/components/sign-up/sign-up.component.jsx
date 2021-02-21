@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
@@ -57,16 +57,16 @@ class SignUp extends React.Component {
           <input
             name="email"
             type="email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
+            value={this.state.email}
+            onChange={this.handleChange}
             required
           />
           <label>Email</label>
           <input
             name="password"
             type="password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
+            value={this.state.password}
+            onChange={this.handleChange}
             required
           />
           <label>Password</label>
